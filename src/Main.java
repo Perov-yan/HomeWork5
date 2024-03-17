@@ -30,11 +30,28 @@ public class Main {
 
         System.out.println("Здание 3:");
         int year = 2024;
-
         if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) {
             System.out.println(year + " год является високосным");
                 } else {
             System.out.println(year + " год не является високосным");
         }
+        System.out.println(" ");
+
+        System.out.println("Здание 4:");
+        short deliveryDistance = 95;
+        byte deliveryTime = 1;
+        if ( deliveryDistance <= 20) {
+            System.out.println("Потребуется дней: " + deliveryTime);
+        } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
+            deliveryTime = 2;
+            System.out.println("Потребуется дней: " + deliveryTime);
+        } else if ( deliveryDistance > 60 && deliveryDistance <= 100){
+            deliveryTime = 3;
+            System.out.println("Потребуется дней: " + deliveryTime);
+        } else {
+            System.out.println("Доставки нет");
+        }
+        System.out.println(" ");
+
     }
 }
